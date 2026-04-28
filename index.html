@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Developers Global - Uniting developers worldwide. Join our global community to learn, collaborate, and build the future together.">
+    <title>Developers Global</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-mesh"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">&lt;/&gt;</span>
+            <span class="logo-text">Developers<span class="highlight">Global</span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#community">Community</a></li>
+        </ul>
+        <a href="#join" class="btn btn-primary nav-btn">Join Now</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="badge">
+                <span class="pulse-dot"></span> Welcome to the future of collaboration
+            </div>
+            <h1 class="hero-title">
+                Uniting Code.<br>
+                Empowering <span class="gradient-text">Developers.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Join a borderless ecosystem where innovators, creators, and engineers collaborate to build the next generation of software. Connect globally, build locally.
+            </p>
+            <div class="hero-actions">
+                <a href="#join" class="btn btn-primary btn-lg">
+                    Become a Member <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="btn btn-secondary btn-lg">
+                    Explore Platform
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-suffix">K+</span>
+                    <span class="stat-label">Active Members</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Open Projects</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Code Window Decoration -->
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="window-title">world.js</div>
+                </div>
+                <div class="window-body">
+                    <pre><code><span class="keyword">import</span> { Developer } <span class="keyword">from</span> <span class="string">'@global/community'</span>;
+<span class="keyword">import</span> { Future } <span class="keyword">from</span> <span class="string">'@global/innovation'</span>;
+
+<span class="keyword">const</span> connectTheWorld = <span class="keyword">async</span> () => {
+  <span class="keyword">const</span> you = <span class="keyword">new</span> Developer();
+  
+  <span class="keyword">await</span> you.join(<span class="string">'DevelopersGlobal'</span>);
+  
+  <span class="keyword">if</span> (you.isReady()) {
+    <span class="keyword">return</span> Future.build();
+  }
+};
+
+connectTheWorld();</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Join <span class="highlight">DevelopersGlobal</span>?</h2>
+                <p>We provide the ultimate ecosystem for developers to thrive, learn, and accelerate their careers.</p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3>Global Networking</h3>
+                    <p>Connect with brilliant minds across continents. Find mentors, co-founders, or just awesome friends to code with.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Open Source Collaboration</h3>
+                    <p>Contribute to high-impact projects. Build your portfolio while solving real-world problems.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Career Acceleration</h3>
+                    <p>Get exclusive access to job opportunities, resume reviews, and interview prep from industry veterans.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Knowledge Sharing</h3>
+                    <p>Attend masterclasses, workshops, and lightning talks on the bleeding edge of technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="join" class="cta-section">
+        <div class="container">
+            <div class="cta-box glass-card">
+                <h2>Ready to shape the future?</h2>
+                <p>Join thousands of developers who are already building tomorrow's tech landscape today.</p>
+                <form class="join-form" onsubmit="event.preventDefault(); alert('Welcome to DevelopersGlobal! (This is a demo)');">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Join Waitlist</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    <span class="logo-text">Developers<span class="highlight">Global</span></span>
+                </div>
+                <p>Empowering the world's creators.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Platform</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Events</a>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <a href="#">Blog</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Guidelines</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> DevelopersGlobal. Open Source Community.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
