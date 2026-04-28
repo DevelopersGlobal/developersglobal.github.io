@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Developers Global - Uniting developers worldwide. Join our global community to learn, collaborate, and build the future together.">
+    <meta name="description" content="Developers Global - The premier blogging platform for developers worldwide. Share knowledge, write articles, and build the future together.">
     <title>Developers Global</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
             <li><a href="#features">Features</a></li>
             <li><a href="#community">Community</a></li>
         </ul>
-        <a href="#join" class="btn btn-primary nav-btn">Join Now</a>
+        <a href="https://discord.gg/Yn9g6KuWyA" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-btn">Join Discord</a>
     </nav>
 
     <!-- Hero Section -->
@@ -40,33 +40,33 @@
                 <span class="pulse-dot"></span> Welcome to the future of collaboration
             </div>
             <h1 class="hero-title">
-                Uniting Code.<br>
-                Empowering <span class="gradient-text">Developers.</span>
+                Share Knowledge.<br>
+                Empower <span class="gradient-text">Developers.</span>
             </h1>
             <p class="hero-subtitle">
-                Join a borderless ecosystem where innovators, creators, and engineers collaborate to build the next generation of software. Connect globally, build locally.
+                The premier blogging platform where innovators, creators, and engineers write, read, and share the technical content that drives the next generation of software.
             </p>
             <div class="hero-actions">
-                <a href="#join" class="btn btn-primary btn-lg">
-                    Become a Member <i class="fas fa-arrow-right"></i>
+                <a href="https://medium.com/developersglobal" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                    Start Reading <i class="fab fa-medium"></i>
                 </a>
-                <a href="#about" class="btn btn-secondary btn-lg">
-                    Explore Platform
+                <a href="https://discord.gg/Yn9g6KuWyA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+                    Join Discord
                 </a>
             </div>
             
             <div class="hero-stats">
                 <div class="stat-item">
                     <span class="stat-number" data-target="10">0</span><span class="stat-suffix">K+</span>
-                    <span class="stat-label">Active Members</span>
+                    <span class="stat-label">Active Readers</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
                     <span class="stat-label">Countries</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Open Projects</span>
+                    <span class="stat-number" data-target="5">0</span><span class="stat-suffix">K+</span>
+                    <span class="stat-label">Articles Published</span>
                 </div>
             </div>
         </div>
@@ -78,23 +78,22 @@
                     <div class="dots">
                         <span></span><span></span><span></span>
                     </div>
-                    <div class="window-title">world.js</div>
+                    <div class="window-title">publish.js</div>
                 </div>
                 <div class="window-body">
-                    <pre><code><span class="keyword">import</span> { Developer } <span class="keyword">from</span> <span class="string">'@global/community'</span>;
-<span class="keyword">import</span> { Future } <span class="keyword">from</span> <span class="string">'@global/innovation'</span>;
+                    <pre><code><span class="keyword">import</span> { Author } <span class="keyword">from</span> <span class="string">'@global/community'</span>;
+<span class="keyword">import</span> { Knowledge } <span class="keyword">from</span> <span class="string">'@global/tech'</span>;
 
-<span class="keyword">const</span> connectTheWorld = <span class="keyword">async</span> () => {
-  <span class="keyword">const</span> you = <span class="keyword">new</span> Developer();
+<span class="keyword">const</span> publishArticle = <span class="keyword">async</span> () => {
+  <span class="keyword">const</span> you = <span class="keyword">new</span> Author();
   
-  <span class="keyword">await</span> you.join(<span class="string">'DevelopersGlobal'</span>);
+  <span class="keyword">const</span> article = <span class="keyword">await</span> you.write(Knowledge.deepDive());
+  <span class="keyword">await</span> article.publish(<span class="string">'DevelopersGlobal'</span>);
   
-  <span class="keyword">if</span> (you.isReady()) {
-    <span class="keyword">return</span> Future.build();
-  }
+  <span class="keyword">return</span> article.shareWithWorld();
 };
 
-connectTheWorld();</code></pre>
+publishArticle();</code></pre>
                 </div>
             </div>
         </div>
@@ -104,30 +103,30 @@ connectTheWorld();</code></pre>
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Why Join <span class="highlight">DevelopersGlobal</span>?</h2>
-                <p>We provide the ultimate ecosystem for developers to thrive, learn, and accelerate their careers.</p>
+                <h2>Why Write on <span class="highlight">DevelopersGlobal</span>?</h2>
+                <p>The ultimate platform to share your technical expertise, build your brand, and read high-quality engineering blogs.</p>
             </div>
             
             <div class="feature-grid">
                 <div class="feature-card glass-card">
-                    <div class="feature-icon"><i class="fas fa-globe-americas"></i></div>
-                    <h3>Global Networking</h3>
-                    <p>Connect with brilliant minds across continents. Find mentors, co-founders, or just awesome friends to code with.</p>
+                    <div class="feature-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Write & Publish</h3>
+                    <p>Share your technical deep-dives, tutorials, and architectural insights with a global audience of passionate developers.</p>
                 </div>
                 <div class="feature-card glass-card">
-                    <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Open Source Collaboration</h3>
-                    <p>Contribute to high-impact projects. Build your portfolio while solving real-world problems.</p>
+                    <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Curated Content</h3>
+                    <p>Read high-quality, peer-reviewed articles from industry experts on the bleeding edge of software engineering.</p>
                 </div>
                 <div class="feature-card glass-card">
-                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
-                    <h3>Career Acceleration</h3>
-                    <p>Get exclusive access to job opportunities, resume reviews, and interview prep from industry veterans.</p>
+                    <div class="feature-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Build Your Brand</h3>
+                    <p>Establish yourself as a thought leader in the tech community. Grow your audience and accelerate your career.</p>
                 </div>
                 <div class="feature-card glass-card">
-                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
-                    <h3>Knowledge Sharing</h3>
-                    <p>Attend masterclasses, workshops, and lightning talks on the bleeding edge of technology.</p>
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3>Engaged Community</h3>
+                    <p>Discuss ideas, get feedback, and network with fellow engineers on our active Discord server and LinkedIn page.</p>
                 </div>
             </div>
         </div>
@@ -137,12 +136,16 @@ connectTheWorld();</code></pre>
     <section id="join" class="cta-section">
         <div class="container">
             <div class="cta-box glass-card">
-                <h2>Ready to shape the future?</h2>
-                <p>Join thousands of developers who are already building tomorrow's tech landscape today.</p>
-                <form class="join-form" onsubmit="event.preventDefault(); alert('Welcome to DevelopersGlobal! (This is a demo)');">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn btn-primary">Join Waitlist</button>
-                </form>
+                <h2>Ready to share your knowledge?</h2>
+                <p>Start reading and writing on our Medium blog, join our Discord community, and follow our updates on LinkedIn.</p>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+                    <a href="https://discord.gg/Yn9g6KuWyA" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="background: #5865F2; box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);">
+                        <i class="fab fa-discord" style="font-size: 1.2rem;"></i> Join Discord
+                    </a>
+                    <a href="https://www.linkedin.com/company/developersglobal/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+                        <i class="fab fa-linkedin" style="font-size: 1.2rem;"></i> Follow LinkedIn
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -155,27 +158,25 @@ connectTheWorld();</code></pre>
                     <span class="logo-icon">&lt;/&gt;</span>
                     <span class="logo-text">Developers<span class="highlight">Global</span></span>
                 </div>
-                <p>Empowering the world's creators.</p>
+                <p>Empowering developers through knowledge sharing.</p>
             </div>
             <div class="footer-links">
                 <div class="link-group">
-                    <h4>Platform</h4>
-                    <a href="#">About Us</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Events</a>
+                    <h4>Community</h4>
+                    <a href="https://discord.gg/Yn9g6KuWyA" target="_blank" rel="noopener noreferrer">Discord Server</a>
+                    <a href="https://www.linkedin.com/company/developersglobal/" target="_blank" rel="noopener noreferrer">LinkedIn Page</a>
                 </div>
                 <div class="link-group">
                     <h4>Resources</h4>
-                    <a href="#">Blog</a>
-                    <a href="#">Documentation</a>
-                    <a href="#">Guidelines</a>
+                    <a href="https://medium.com/developersglobal" target="_blank" rel="noopener noreferrer">Medium Blog</a>
+                    <a href="https://github.com/DevelopersGlobal" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
             <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-discord"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://discord.gg/Yn9g6KuWyA" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+                <a href="https://www.linkedin.com/company/developersglobal/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/developersglobal" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium"></i></a>
+                <a href="https://github.com/DevelopersGlobal" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
